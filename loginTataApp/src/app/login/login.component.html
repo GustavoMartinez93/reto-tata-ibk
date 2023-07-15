@@ -1,0 +1,29 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group" style="text-align: -webkit-center;">
+  
+      <div class="card text-center" style="margin: 16rem;">
+        <div class="card-header">
+          Login
+        </div>
+        <div class="card-body">
+          <div class="text-center">
+            <div class="form-outline mb-4">
+              <label class="form-label">Usuario</label>
+              <input type="email" id="user" formControlName="user" class="form-control" />
+              
+            </div>
+        
+        
+            <div class="form-outline mb-4">
+              <label class="form-label">Contraseña</label>
+              <input type="password" id="password" formControlName="password" class="form-control" />
+              
+            </div>
+        
+            <button type="submit" class="btn btn-primary btn-block mb-4" >Ingresar</button>
+          </div>
+        </div>
+      </div>
+  
+  </div>
+  </form>

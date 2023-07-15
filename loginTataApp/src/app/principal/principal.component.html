@@ -1,0 +1,17 @@
+<!--<form class="tasks-form">-->
+ <div class="form-group" style="margin: 8rem;">
+  <h1>LISTA DE TAREAS</h1>
+
+  <div>
+   <label style="margin: 1rem;">Tarea</label>
+   <input [(ngModel)]="newTask" (keyup.enter)="this.handleKeyUp()"  type="text" style="margin: 1rem;">
+   <button class="btn btn-primary btn-block mb-4" style="margin: 1rem;" (click)="addTask()" color="primary">Agregar</button>
+  </div>
+  <div>
+   <ng-container *ngFor="let task of tasks; let i = index">
+    <app-task [task]="task" [index]="i"></app-task>
+   </ng-container>
+  </div>
+ </div>
+<!--</form>-->
+
